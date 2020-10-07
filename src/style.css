@@ -1,0 +1,113 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .weather-app {
+    position: relative;
+    top: 15px;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 700px;
+    background-image: linear-gradient(
+      to top,
+      #0c3483 0%,
+      #a2b6df 100%,
+      #6b8cce 100%,
+      #a2b6df 100%
+    );
+  }
+  .row {
+    margin: 15px auto;
+  }
+  
+  h1 {
+    font-size: 46px;
+    font-style: bold;
+    position: relative;
+    top: 10px;
+    margin: 5px auto;
+  }
+  h2 {
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    margin: 5px auto;
+  }
+  .temperature {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 10px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+  }
+  .units {
+    position: relative;
+    top: 14px;
+  }
+  p {
+    font-size: 14px;
+    font-style: bold;
+    position: relative;
+    top: 60px;
+    margin: 0px auto;
+  }
+  
+  input {
+    display: inline;
+    font-size: 15px;
+    position: relative;
+    left: 40px;
+    top: 5px;
+    margin: 0px 0 auto;
+  }
+  li img {
+    position: relative;
+    margin: 0 0 auto;
+    padding: 0;
+    display: block;
+  }
+  
+  li {
+    position: relative;
+    top: 0px;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  
+  .weather {
+    position: relative;
+    top: 60px;
+    right: 5px;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  .Weather-icon {
+    position: relative;
+    top: 30px;
+    margin-right: 10px;
+    height: 64px;
+    width: 64px;
+  }
+  button {
+    position: relative;
+    top: 5px;
+    left: 15px;
+    margin-right: 0px;
+  }
+  .open-source {
+    position: relative;
+    left: 425px;
+    top: 15px;
+    font-size: 13px;
+    margin: 2px auto;
+    display: inline;
+  }
+  
