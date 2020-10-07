@@ -1,10 +1,6 @@
-body {
+    .weather-app {
     font-family: "Montserrat", sans-serif;
     background-color: white;
-    padding: 0px;
-    margin: 0px auto;
-  }
-  .weather-app {
     position: relative;
     top: 15px;
     border: 1px solid white;
