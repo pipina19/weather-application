@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2e6bc0924.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-city">
+          <div class="row">
+            <div class="col-5">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                autofocus="on"
+                autocomplete="off"
+                id="town-city"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+        
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-5">
+            <ul>
+              <li>
+                <strong>Monday</strong><br />21°/15°<img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                /><br />
+              </li>
+              <li>
+                <strong>Tuesday</strong><br />22°/13°
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                /><br />
+              </li>
+              <li>
+                <strong>Wednesday</strong><br />24°/14°<img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                /><br />
+              </li>
+              <li>
+                <strong>Thursday</strong><br />24°/14°
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                /><br />
+              </li>
+              <li>
+                <strong>Friday</strong><br />23°/13°<img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                /><br />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <h1 id="mesto"></h1>
+            <h2 id="date">
+              
+            </h2>
+            
+            <div class="float-left">
+              <span class="temperature" id="temperature"></span
+              ><span class="units">°C<br />
+              <p>
+              <span id="description"> Partly Cloudy</span><br/>
+                Humidity:<span id="humidity">  </span>%<br />
+                Wind:<span id="wind">  </span>mph<br />
+              </p>
+            </div>
+
+            <img src="weather2.svg" width="350" class="weather" />
+          </div>
+        </div>
+      <script src="src/index.js"></script>
+      </div>
+    </div>
+  </body>
+
+<span class="open-source"><a href="https://github.com/pipina19/weather-app">Open-source code</a> by Lucia Istonova</span>
+</html>
