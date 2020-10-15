@@ -32,6 +32,7 @@ function formatDate(date) {
     );
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
+      document.querySelector("#icon").innerHTML=response.data[0].icon;
   }
   
   function searchCity(city) {
