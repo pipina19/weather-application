@@ -32,7 +32,7 @@ function formatDate(date) {
     );
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
-      document.querySelector("#icon").innerHTML=response.data[0].icon;
+  
   }
   
   function searchCity(city) {
@@ -68,3 +68,6 @@ function formatDate(date) {
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
   
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt")
