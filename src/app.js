@@ -68,7 +68,7 @@ function formatDate(date) {
   searchForm.addEventListener("submit", handleSubmit);
   
   let currentLocationButton = document.querySelector("#current-location-button");
-  currentLocationButton.addEventListener(getCurrentLocation);
+  currentLocationButton.addEventListener("click",getCurrentLocation);
   
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
