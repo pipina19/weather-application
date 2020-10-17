@@ -44,7 +44,7 @@ function formatDate(timestamp) {
   }
   function displayForecast(response){
     let forecastElement = document.querySelector("#forecast");
-    
+    let forecast = response.data.list[0];
        forecastElement.innerHTML=`
        <div class="col-5">
             <ul>
