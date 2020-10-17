@@ -84,7 +84,7 @@ function formatDate(timestamp) {
            
             </ul>
         
-          </div>;`
+          </div>`;
   
   
             }  
