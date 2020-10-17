@@ -60,7 +60,7 @@ function formatDate(timestamp) {
                 /><br />
               </li>`
   }  
-  }
+  
 
 
   function searchCity(city) {
