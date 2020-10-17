@@ -53,9 +53,7 @@ function formatDate(timestamp) {
    let forecast = null;
 
    for (let index = 0; index<6; index++){
-
-   
-     forecast = response.data.list[index];
+   forecast = response.data.list[index];
        forecastElement.innerHTML=`
        <ul>
   <li>
@@ -65,6 +63,7 @@ function formatDate(timestamp) {
                   src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
                 /><br />
               </li>
+              </ul>
               `;
   
             }  }
