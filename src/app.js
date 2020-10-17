@@ -57,9 +57,8 @@ function formatDate(timestamp) {
    
     let forecast = response.data.list[index];
        forecastElement.innerHTML=`
-      
-      <ul>
-              <li>
+       <ul>
+  <li>
                 <strong>${formatHours(forecast.dt * 1000)}</strong><br /> 
                 <span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span>
                 <img
