@@ -96,4 +96,4 @@ fahrenheitLink.addEventListener("click",displayFahrenheitTemperature);
 let celsiustLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click",displayCelsiusTemperature);
 
-search("London");
+searchCity("London");
