@@ -22,19 +22,24 @@ function formatDate(date) {
   }
   
   function displayWeatherCondition(response) {
-    document.querySelector("#mesto").innerHTML = response.data.name;
-    document.querySelector("#temperature").innerHTML = Math.round(
-      response.data.main.temp
-    );
-    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-    document.querySelector("#wind").innerHTML = Math.round(
-      response.data.wind.speed
-    );
-    document.querySelector("#description").innerHTML =
-      response.data.weather[0].main;   
-    document.querySelector("icon").setAttribute = ("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    let temperatureElement = document.querySelector("#temperature");
+    let cityElement = document.querySelector("#mesto")
+    let descritionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    let dateElement = document.querySelector("#date");
+    let iconElement = document.querySelector("#icon");
 
-  }
+    celsiusTemperature = response.data.main.temp;
+
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+    cityElement.innerHTML = response.data.name;
+    descritionElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML = response.data.main.humidity;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML = formatDate(response.data.dt *1000);
+    iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    }
   
   function searchCity(city) {
     let apiKey = "6b8b1bd45ebc6006cd94529030eb9409";
@@ -66,7 +71,7 @@ function formatDate(date) {
     temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
   }
 
-
+let celsiusTemperature = null;
 
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
