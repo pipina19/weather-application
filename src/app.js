@@ -52,8 +52,8 @@ function formatDate(timestamp) {
     let forecastElement = document.querySelector("#forecast");
     let forecast = response.data.list[0];
        forecastElement.innerHTML=`
-       
-            
+       <div class="col-5">
+       <ul>
               <li>
                 <strong>${formatHours(forecast.dt * 1000)}</strong><br /><span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span><img
                   src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
@@ -63,7 +63,7 @@ function formatDate(timestamp) {
 
               forecast = response.data.list[1];
               forecastElement.innerHTML+=`
-            <ul>
+            
               <li>
               <strong>${formatHours(forecast.dt * 1000)}</strong><br /><span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span>
                 <img
@@ -102,7 +102,7 @@ function formatDate(timestamp) {
                 /><br />
               </li>
             </ul>
-           
+           </div>
           `;
   
   
