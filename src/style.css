@@ -103,6 +103,7 @@
   }
   .descriptions{
     font-size: 18px;
+    text-transform: capitalize;
 
   }
 .icons{
