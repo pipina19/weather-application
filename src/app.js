@@ -55,7 +55,7 @@ function formatDate(timestamp) {
    for (let index = 0; index<6; index++){
 
    
-    let forecast = response.data.list[index];
+     forecast = response.data.list[index];
        forecastElement.innerHTML=`
        <ul>
   <li>
