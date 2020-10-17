@@ -72,6 +72,12 @@ function formatDate(date) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
 
+  function displayCelsiusTemperature(event){
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML=Math.round(celsiusTemperature);
+  }
+
 let celsiusTemperature = null;
 
   let dateElement = document.querySelector("#date");
@@ -85,5 +91,9 @@ let celsiusTemperature = null;
   currentLocationButton.addEventListener("click",getCurrentLocation);
   
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click",displayFahrenheitTemperature)
-  
+fahrenheitLink.addEventListener("click",displayFahrenheitTemperature);
+
+let celsiustLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click",displayCelsiusTemperature);
+
+search("London");
