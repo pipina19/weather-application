@@ -109,7 +109,7 @@
   position:relative;
   top:40px;
 }
-.weather-temperature.active{
+.weather-temperature.temperature.active{
   color: rgb(33,33,33);
   cursor:default;
 }
