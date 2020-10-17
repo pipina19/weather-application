@@ -110,7 +110,7 @@
   top:40px;
 }
 .active{
-  color: rgb(33,33,33);
+  color: whitesmoke;
   cursor:default;
 }
 .active:hover{
