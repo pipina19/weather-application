@@ -43,13 +43,13 @@ function formatDate(timestamp) {
     iconElement.setAttribute("alt",response.data.weather[0].description)
   }
   function displayForecast(response){
-    let forecastElement = document.querySelector("#forecast")
+    let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML = null;
     let forecast=null;
      for (let index=0;index<6;index++){
        forecast= response.data.list[index];
        forecastElement.innerHTML+=`
-       <div class="col-5">
+       
             <ul>
               <li>
                 <strong>${formatHours(forecast.dt * 1000)}</strong><br /><span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span><img
