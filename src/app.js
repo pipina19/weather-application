@@ -75,7 +75,7 @@ function formatDate(date) {
   function displayCelsiusTemperature(event){
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML=Math.round(celsiusTemperature);
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
   }
 
 let celsiusTemperature = null;
