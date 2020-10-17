@@ -58,8 +58,36 @@ function formatDate(timestamp) {
                 <strong>${formatHours(forecast.dt * 1000)}</strong><br /><span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span><img
                   src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
                 /><br />
-              </li>`
-  }  
+              </li>
+              <li>
+              <strong>${formatHours(forecast.dt * 1000)}</strong><br />22°/13°
+                <img
+                src="https://openweathermap.org/img/wn/${forecast.weather[1].icon}@2x.png"
+                /><br />
+              </li>
+              <li>
+              <strong>${formatHours(forecast.dt * 1000)}</strong><br />24°/14°<img
+              src="https://openweathermap.org/img/wn/${forecast.weather[2].icon}@2x.png"
+                /><br />
+              </li>
+              <li>
+              <strong>${formatHours(forecast.dt * 1000)}</strong><br />24°/14°
+                <img
+                src="https://openweathermap.org/img/wn/${forecast.weather[3].icon}@2x.png"
+                /><br />
+              </li>
+              <li>
+              <strong>${formatHours(forecast.dt * 1000)}</strong><br />23°/13°<img
+              src="https://openweathermap.org/img/wn/${forecast.weather[4].icon}@2x.png"
+                /><br />
+              </li>
+           
+            </ul>
+        
+          </div>`
+  
+  
+            }  
   
 
 
