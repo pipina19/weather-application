@@ -51,7 +51,7 @@ function formatDate(date) {
   function handleSubmit(event) {
     event.preventDefault();
     let city = document.querySelector("#town-city").value;
-    searchCity(city);
+    searchCity(cityInputElement.value);
   }
   
   function searchLocation(position) {
@@ -68,8 +68,8 @@ function formatDate(date) {
   function displayFahrenheitTemperature(event){
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    let fahrenheitTemperature=(temperatureElement.innerHTML*9)/5+32;
-    temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
+    let fahrenheitTemperature=(celsiusTemperature *9)/5+32;
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
 
 let celsiusTemperature = null;
