@@ -33,7 +33,8 @@ function formatDate(date) {
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;   
     document.querySelector("icon").setAttribute = ("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    }
+
+  }
   
   function searchCity(city) {
     let apiKey = "6b8b1bd45ebc6006cd94529030eb9409";
@@ -64,6 +65,9 @@ function formatDate(date) {
     let fahrenheitTemperature=(temperatureElement.innerHTML*9)/5+32;
     temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
   }
+
+
+
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
