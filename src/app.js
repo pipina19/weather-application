@@ -59,7 +59,7 @@ function formatDate(timestamp) {
        <ul>
             <li>
                 <strong>${formatHours(forecast.dt * 1000)}</strong>
-                <br /> 
+                
                 <span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span>
                 <img
                   src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
