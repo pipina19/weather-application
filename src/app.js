@@ -53,7 +53,7 @@ function formatDate(timestamp) {
     forecastElement.innerHTML = null;
    let forecast = null;
 
-   for (let index = 0; index<5; index++){
+   for (let index = 0; index<4; index++){
    forecast = response.data.list[index];
        forecastElement.innerHTML += `
        <ul>
