@@ -52,11 +52,12 @@ function formatDate(timestamp) {
     let forecastElement = document.querySelector("#forecast");
    let forecast = null;
 
-   for (let index = 0; index<6; index++){
+   for (let index = 0; index<5; index++){
    forecast = response.data.list[index];
        forecastElement.innerHTML=`
-      
-       
+       <div class="col-5" >
+       <ul>
+
   <li>
                 <strong>${formatHours(forecast.dt * 1000)}</strong><br /> 
                 <span class="weather-forecast-temperature">${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°</span>
