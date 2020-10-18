@@ -66,6 +66,7 @@ function formatDate(timestamp) {
                   src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
                 /><br />
               </li>
+              </ul>
             
               `;
   
