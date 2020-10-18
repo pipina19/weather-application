@@ -50,12 +50,12 @@ function formatDate(timestamp) {
   }
   function displayForecast(response){
     let forecastElement = document.querySelector("#forecast");
-    forecastElement=null;
+    forecastElement = null;
    let forecast = null;
 
    for (let index = 0; index<5; index++){
    forecast = response.data.list[index];
-       forecastElement.innerHTML+=`
+       forecastElement.innerHTML += `
        <div class="col-5" >
        <ul>
             <li>
