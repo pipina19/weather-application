@@ -8,7 +8,7 @@
     padding: 10px auto;
     margin: 0 auto;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 750px;
     background-image:url('pexels-pixabay-87651.jpg');
   }
   
@@ -69,7 +69,7 @@
     left: 20px;
     top: 20px;
     list-style-type: none;
-    font-size: 15px;
+    font-size: 20px;
     padding: 0px;
     margin: 0px auto;
     display: block;
