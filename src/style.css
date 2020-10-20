@@ -5,7 +5,7 @@
     position: relative;
     top: 30px;
     border: 1px solid white;
-    padding: 0px auto;
+    padding: 10px auto;
     margin: 0 auto;
     border-radius: 10px;
     max-width: 750px;
@@ -60,7 +60,7 @@
     top: 20px;
     font-size: 15px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 auto;
     display: block;
   }
   
