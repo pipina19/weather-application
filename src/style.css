@@ -81,7 +81,7 @@
     top: 25px;
     font-size: 13px;
     margin: 2px auto;
-    display: inline;
+    display: block;
   }
   .descriptions{
     font-size: 18px;
