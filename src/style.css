@@ -75,13 +75,7 @@
     margin: 0px auto;
     padding: 0px;
   }
-  .Weather-icon {
-    position: relative;
-    top: 30px;
-    margin-right: 10px;
-    height: 64px;
-    width: 64px;
-  }
+  
   button {
     position: relative;
     top: 15px;
