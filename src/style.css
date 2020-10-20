@@ -52,17 +52,10 @@
     position: relative;
     left: 40px;
     top: 15px;
-    margin: 15px 0 auto;
+    margin: 0 auto;
     padding: 15px auto;
   }
-  li img {
-    position: relative;
-    top: 20px;
-    font-size: 15px;
-    margin: 0 auto;
-    padding: 0 auto;
-    display: block;
-  }
+ 
   
   li {
     position: relative;
