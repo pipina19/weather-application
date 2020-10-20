@@ -16,8 +16,8 @@
     font-size: 50px;
     font-style: bold;
     position: relative;
-    top: 10px;
-    margin: 5px auto;
+    top: 20px;
+    margin: 0px auto;
   }
   .den {
     font-size: 16px;
@@ -57,7 +57,7 @@
   }
   li img {
     position: relative;
-    top: 10px;
+    top: 20px;
     font-size: 15px;
     margin: 0 0 auto;
     padding: 0;
@@ -67,7 +67,7 @@
   li {
     position: relative;
     left: 20px;
-    top: 10px;
+    top: 20px;
     list-style-type: none;
     font-size: 15px;
     padding: 0px;
