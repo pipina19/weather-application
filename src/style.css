@@ -68,9 +68,6 @@
     margin: 0px auto;
     display: block;
   }
-  
-  
-  
   button {
     position: relative;
     top: 15px;
@@ -94,6 +91,7 @@
 .icons{
   position:relative;
   top:30px;
+  margin: 0 auto;
 }
 .active{
   color: whitesmoke;
