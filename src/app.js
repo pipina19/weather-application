@@ -62,9 +62,10 @@ function formatDate(timestamp) {
                 ->
                 <span class="weather-forecast-temperature">
                 ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
-                <img
-                src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
+                
             </span>
+            <img
+                src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
               </li>
               </ul>
             
