@@ -37,6 +37,7 @@
   .units {
     position: relative;
     top: 14px;
+    margin: 0px auto;
   }
   p {
     font-size: 14px;
@@ -68,13 +69,7 @@
     display: block;
   }
   
-  .weather {
-    position: relative;
-    top: 60px;
-    right: 5px;
-    margin: 0px auto;
-    padding: 0px;
-  }
+  
   
   button {
     position: relative;
